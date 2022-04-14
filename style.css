@@ -1,0 +1,274 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: 000;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;  /*позиціонування по центру*/
+    height: 900px;
+}
+
+.header {
+    color: #fff;
+    padding-top: 57px;
+    background: url("header-bg.jpg") no-repeat center top / cover;
+}
+
+header a {
+    color: white;
+}
+
+
+
+
+.menu {
+    display: flex;
+}
+
+.menu li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.tel {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.tel {
+    margin-left: auto;
+    letter-spacing: 0.1em;
+}
+
+.logo {
+    margin-right: 69px;
+}
+
+.offer {
+    text-transform: uppercase;
+    padding-top: 229px;
+}
+
+.offer p {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+.offer h1 {
+    font-size: 100px;
+    margin-bottom: 19px;
+    margin-top: -9px;
+    letter-spacing: 0.02em;
+}
+
+.btn {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 1px solid #fff;
+    width: 238px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.offer h1 {
+    letter-spacing: 0.04em;
+}
+
+section {
+    padding-top: 113px;
+}
+
+.desc-left, .desc-right {
+    width: 567px;
+}
+
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 19px;
+    text-align: justify;
+    line-height: 1.62em;
+}
+
+.description h3 {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    padding-top: 58px;
+}
+
+.about .container h2 {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+
+.gallery {
+    display: flex;
+    padding-top: 67px;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 114px 0;
+}
+
+.footer-text p {
+    margin-right: 67px;
+}
+
+.footer .container {
+    height: 80px;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    transition: 0.7s;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .container{
+        width: 960px;
+    }
+    .desc-left, .desc-right {
+        width: 48%;
+    }
+
+    .gallery img:nth-child(1) {
+        width: 23%;
+    }
+
+    .gallery img:nth-child(2) {
+        width: 23%;
+    }
+
+    .gallery img:nth-child(3) {
+        width: 48%;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .container{
+        width: 720px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container{
+        width: 540px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .offer {
+        margin-left: 30px;
+    }
+
+    .btn {
+        margin-left: 0px;
+    }
+    .offer h1  {
+        line-height: 1em;
+        margin-top: 10px;
+    }
+
+    .tel {
+        display: flex;
+        margin-right: 23px;
+    }
+    .description {
+        flex-wrap: wrap;
+    }
+
+        
+    .desc-left, .desc-right {
+        width: 92%;
+    }
+
+    .gallery img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    .gallery img:nth-child(1),
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(3) {
+        width: 104%;
+        margin-bottom: 20px;
+        margin-left: -17px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        display:none;
+    }
+}
